@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.trialseven.home_user">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="HOME (USER)"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO EMPLOYEE"
+        android:id="@+id/btn_to_employee"
+        android:onClick="onToEmployee"
+        android:layout_above="@+id/btn_logout"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO EMPLOYER"
+        android:id="@+id/btn_to_employer"
+        android:onClick="onToEmployer"
+        android:layout_alignTop="@+id/btn_to_employee"
+        android:layout_alignStart="@+id/btn_to_employee" />" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/vt_status"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView4"
+        android:text="MODE" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIEW ALL JOBS"
+        android:id="@+id/btn_view_all_jobs"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onViewAllJobs" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEARCH FOR JOB"
+        android:id="@+id/btn_search_for_job"
+        android:layout_below="@+id/btn_view_all_jobs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="onSearchForJob" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ASSESSMENT"
+        android:id="@+id/btn_assessment"
+        android:layout_above="@+id/btn_view_all_jobs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="onAssessment" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIEW MY POSTS"
+        android:id="@+id/btn_view_my_posts"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onViewMyPosts"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POST A JOB"
+        android:id="@+id/btn_post_a_job"
+        android:layout_alignTop="@+id/btn_search_for_job"
+        android:layout_centerHorizontal="true"
+        android:onClick="onPostAJob" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG OUT"
+        android:id="@+id/btn_logout"
+        android:onClick="onLogout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.trialseven.ad_manage_quiz_detail">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="QUESTION DETAIL"
+        android:id="@+id/textView22"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Question:"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="id"
+        android:id="@+id/vt_qnid"
+        android:layout_alignTop="@+id/textView25"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ID: "
+        android:id="@+id/textView27"
+        android:layout_below="@+id/textView22"
+        android:layout_toStartOf="@+id/vt_qnid" />
+
+    <EditText
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_question"
+        android:layout_below="@+id/textView25"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Option A:"
+        android:id="@+id/textView26"
+        android:layout_below="@+id/et_question"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_optiona"
+        android:layout_below="@+id/textView26"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Option B:"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/et_optiona"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_optionb"
+        android:layout_below="@+id/textView28"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Next ID: "
+        android:id="@+id/textView29"
+        android:layout_below="@+id/et_question"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/et_nxa"
+        android:layout_below="@+id/textView29"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Next ID: "
+        android:id="@+id/textView30"
+        android:layout_above="@+id/et_optionb"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/et_nxb"
+        android:layout_alignBottom="@+id/et_optionb"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:id="@+id/btn_update"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:id="@+id/btn_delete"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:id="@+id/btn_back"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onBack" />
+
+</RelativeLayout>

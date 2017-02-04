@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.trialseven">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".login" />
+        <activity android:name=".register" />
+        <activity android:name=".home_user" />
+        <activity android:name=".home_admin" />
+        <activity android:name=".assessment" />
+        <activity android:name=".er_post" />
+        <activity android:name=".er_view" />
+        <activity android:name=".er_view_detail" />
+        <activity android:name=".ee_view" />
+        <activity android:name=".ee_view_detail" />
+        <activity android:name=".ee_search" />
+        <activity android:name=".ee_search_detail" />
+        <activity android:name=".ad_manage_quiz" />
+        <activity android:name=".ad_manage_quiz_detail" />
+        <activity android:name=".ad_manage_quiz_add" />
+        <activity android:name=".assessment_results" />
+        <activity android:name=".assessment_feedback"></activity>
+    </application>
+
+</manifest>

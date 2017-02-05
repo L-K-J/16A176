@@ -92,7 +92,7 @@ public class assessment_feedback extends AppCompatActivity {
         }
         AddFb fb = new AddFb();
         fb.execute();
-        //startActivity(new Intent(this,home_user.class));
+        startActivity(new Intent(this,home_user.class));
 
     }
 }
